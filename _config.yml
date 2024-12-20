@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+first_name: Haolin (Hailey)
+middle_name:
+last_name: Li
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -50,9 +50,9 @@ rss_icon: true
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
-socials_in_search: true
-bib_search: true
+search_enabled: false
+socials_in_search: false
+bib_search: false
 
 # Dimensions
 max_width: 930px
@@ -197,11 +197,18 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
   - vendor
+  - _pages/not_updated_dropdown.md
+  - _pages/not_updated_repositories.md
+  - _pages/not_updated_cv.md
+  - _pages/not_updated_blog.md
+  - _pages/not_updated_publications.md
+  - _pages/not_updated_news.md
+  - _pages/not_updated_projects.md
+  - _pages/not_updated_teaching.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -260,7 +267,7 @@ jekyll-archives:
     category: "/blog/category/:name/"
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_categories: [] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
