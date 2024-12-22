@@ -272,8 +272,8 @@ display_categories: [] # these categories will be displayed on the front page of
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Haolin, Hailey]
-  first_name: [Li, L.]
+  last_name: [Li]
+  first_name: [Haolin, Hailey]
 
   style: apa
   locale: en
