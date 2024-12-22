@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 cv_pdf: example_pdf.pdf # you can also use external links here
-subtitle: 
+subtitle:
 
 profile:
   align: right
@@ -20,7 +20,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 I am Hailey (Haolin) Li, a master's student in CS at the University of California San Diego
 
 I got my bachelor's degree in CS and sociology from Wellesley College.
-
 
 <!-- Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
