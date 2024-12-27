@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-cv_pdf: example_pdf.pdf # you can also use external links here
+cv_pdf: Hailey_Li_CV.pdf # you can also use external links here
 subtitle:
 
 profile:
@@ -25,4 +25,4 @@ I got my bachelor's degree in CS and sociology from Wellesley College.
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-Here is my [CV](/assets/pdf/example_pdf.pdf) as of January 2025.
+Here is my [CV](/assets/pdf/Hailey_Li_CV.pdf) as of January 2025.
