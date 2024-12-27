@@ -23,4 +23,4 @@ My name is Haolin (Hailey) Li. I am a master's student in CS at the [University 
 
 Before UCSD, I graduated Magna Cum Laude from [Wellesley College](https://www.wellesley.edu/), double majoring in CS and Sociology. While at Wellesley, I worked as a research assistant at the [MIT STEP lab](https://education.mit.edu/) in the [Everyday AI research project](https://education.mit.edu/project/everyday-ai-for-youth-edai/). Before Wellesley, I was at [UWC Atlantic](https://www.uwcatlantic.org/) in Wales, the UK. This educational movement introduced me to the fields of education and sociology.
 
-Outside of academics, I enjoy video games and music. With 12 years of choir experience, I now sing as an alto in the [La Jolla Symphony and Chorus](https://www.lajollasymphony.com/).
+I enjoy video games and made a [two-player children's game](https://cs.wellesley.edu/~cs365/demos/Sp24/SplashAndSprout/) at the Wellesley playable media lab. I also love all genres of music. With 12 years of choir experience, I now sing as an alto in the [La Jolla Symphony and Chorus](https://www.lajollasymphony.com/).
