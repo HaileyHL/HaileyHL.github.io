@@ -2,7 +2,6 @@
 
 ## Table Of Contents
 
-
 ## Local setup using Docker
 
 Using Docker to install Jekyll and Ruby dependencies is the easiest way.
@@ -18,6 +17,7 @@ $ docker compose up
 ```
 
 ## Running Prettier
+
 - If not already, install npm.
 
 ```bash
@@ -27,7 +27,7 @@ $ npm install
 - Run npm format
 
 ```bash
-$ npm format
+$ npm run format
 ```
 
 ## License

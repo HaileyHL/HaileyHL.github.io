@@ -14,15 +14,13 @@ profile:
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-# social: true # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
-I am Hailey (Haolin) Li, a master's student in CS at the University of California San Diego
+**Here is my [CV](/assets/pdf/Hailey_Li_CV.pdf) as of January 2025.**
 
-I got my bachelor's degree in CS and sociology from Wellesley College.
+My name is Haolin (Hailey) Li. I am a master's student in CS at the [University of California San Diego](https://cse.ucsd.edu/). My research interest lies broadly in PL/SE and HCI education. Specifically, I am commited to exploring culturally inclusive and active pedagogy at the upper-secondary and undergraduate levels. I am also interested in AI-integrated teaching strategies.
 
-<!-- Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Before UCSD, I graduated Magna Cum Laude from [Wellesley College](https://www.wellesley.edu/), double majoring in CS and Sociology. While at Wellesley, I worked as a research assistant at the [MIT STEP lab](https://education.mit.edu/) in the [Everyday AI research project](https://education.mit.edu/project/everyday-ai-for-youth-edai/). Before Wellesley, I was at [UWC Atlantic](https://www.uwcatlantic.org/) in Wales, the UK. This educational movement introduced me to the fields of education and sociology.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
-
-Here is my [CV](/assets/pdf/Hailey_Li_CV.pdf) as of January 2025.
+Outside of academics, I enjoy video games and music. With 12 years of choir experience, I now sing as an alto in the [La Jolla Symphony and Chorus](https://www.lajollasymphony.com/).
