@@ -321,6 +321,8 @@ filtered_bibtex_keywords:
     html,
     inspirehep_id,
     pdf,
+    acmdl,
+    isls,
     poster,
     preview,
     selected,

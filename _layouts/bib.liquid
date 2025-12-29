@@ -150,9 +150,9 @@
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
-    {% elsif proceedings contains entry.booktitle %}
-      {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
-    {% elsif thesis contains entry.school %}
+    {% elsif proceedings contains entry.type %}
+      {% capture entrytype %}In: {{ entry.booktitle }}{% endcapture %}
+    {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
@@ -174,7 +174,11 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {%- capture periodical -%}
+    {{ entrytype -}}
+    {%- if entrytype_text != "" and entryyear != "" -%}. {% endif -%}
+    {{ entrymonth }}{{ entryyear }}.
+    {%- endcapture -%}
     <div class="periodical">
       {{ periodical | strip }}
     </div>
@@ -206,6 +210,20 @@
           <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
         {% else %}
           <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+        {% endif %}
+      {% endif %}
+      {% if entry.acmdl %}
+        {% if entry.acmdl contains '://' %}
+          <a href="{{ entry.acmdl }}" class="btn btn-sm z-depth-0" role="button">ACM DL</a>
+        {% else %}
+          <a href="{{ entry.acmdl | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">ACM DL</a>
+        {% endif %}
+      {% endif %}
+      {% if entry.isls %}
+        {% if entry.isls contains '://' %}
+          <a href="{{ entry.isls }}" class="btn btn-sm z-depth-0" role="button">ISLS</a>
+        {% else %}
+          <a href="{{ entry.isls | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">ISLS</a>
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
