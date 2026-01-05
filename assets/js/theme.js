@@ -72,7 +72,9 @@ let applyTheme = () => {
       document.documentElement.removeChild(temp);
       let m = rgb.match(/\d+/g);
       if (m && m.length >= 3) {
-        let r = parseInt(m[0], 10), g = parseInt(m[1], 10), b = parseInt(m[2], 10);
+        let r = parseInt(m[0], 10),
+          g = parseInt(m[1], 10),
+          b = parseInt(m[2], 10);
         // relative luminance approximation
         let lum = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
         isBgDark = lum < 0.5;
