@@ -53,40 +53,9 @@ let applyTheme = () => {
   document.documentElement.setAttribute("data-theme", theme);
 
   // Add class to tables.
-  // Add class to tables only if the site's computed background color is dark.
-  // This avoids adding .table-dark (which sets text to white) when the page
-  // is actually using a light background (for example, when color-scheme is
-  // disabled or CSS variables haven't been flipped).
-  let isBgDark = false;
-  try {
-    let bg = getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color");
-    if (bg) {
-      // Create a temporary element, set its color to the CSS value and read
-      // the resolved RGB to compute luminance. Append to documentElement so
-      // this runs even before body exists.
-      let temp = document.createElement("span");
-      temp.style.color = bg;
-      temp.style.display = "none";
-      document.documentElement.appendChild(temp);
-      let rgb = getComputedStyle(temp).color;
-      document.documentElement.removeChild(temp);
-      let m = rgb.match(/\d+/g);
-      if (m && m.length >= 3) {
-        let r = parseInt(m[0], 10),
-          g = parseInt(m[1], 10),
-          b = parseInt(m[2], 10);
-        // relative luminance approximation
-        let lum = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
-        isBgDark = lum < 0.5;
-      }
-    }
-  } catch (e) {
-    isBgDark = false;
-  }
-
   let tables = document.getElementsByTagName("table");
   for (let i = 0; i < tables.length; i++) {
-    if (theme == "dark" && isBgDark) {
+    if (theme == "dark") {
       tables[i].classList.add("table-dark");
     } else {
       tables[i].classList.remove("table-dark");
@@ -241,24 +210,18 @@ let transTheme = () => {
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
   if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
-    themeSetting = "system";
+    themeSetting = "light"; // default to light theme
   }
   return themeSetting;
 };
 
-// Determine the computed theme, which can be "dark" or "light". If the theme setting is
-// "system", the computed theme is determined based on the user's system preference.
+// Determine the computed theme, which can be "dark" or "light".
+// The adjusted version does not follow the system theme setting.
 let determineComputedTheme = () => {
-  let themeSetting = determineThemeSetting();
-  if (themeSetting == "system") {
-    const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    } else {
-      return "light";
-    }
+  if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
+    return "dark";
   } else {
-    return themeSetting;
+    return "light";
   }
 };
 
