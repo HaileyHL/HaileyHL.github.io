@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My **first authored** paper [_How Professional Software Engineers Debug: A Grounded Theory Analysis_](https://drive.google.com/file/d/1__Cj4Ty8MELVngfUG50pNmE75zEHqjMU/view?usp=sharing) has been **accepted** by FSE (Foundations of Software Engineering) 2026 in the first round!
+My **first authored** paper [_How Professional Software Engineers Debug: A Grounded Theory Analysis_](https://drive.google.com/file/d/1__Cj4Ty8MELVngfUG50pNmE75zEHqjMU/view?usp=sharing) has been **accepted** by FSE (Foundations of Software Engineering) 2026 in the first round and won **Distinguished Paper Award**.
