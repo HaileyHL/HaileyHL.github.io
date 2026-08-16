@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-**Here is my [CV](/assets/pdf/Hailey_Li_CV.pdf) as of January 2026.**
+**Here is my [CV](/assets/pdf/Hailey_Li_CV.pdf) as of August 2026.**
 
 My name is Haolin (Hailey) Li. I am an incoming student in CS at the [University of California San Diego](https://cse.ucsd.edu/). My research interest lies broadly in CS education. Specifically, I am commited to exploring better teaching practices and bringing accessibility to the introduction to programming and computer science.
 
